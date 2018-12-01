@@ -84,6 +84,8 @@ if __name__ == "__main__":
 
         if key == ord('q'):
             break
+        elif key == 32:
+            cv2.imwrite(f"../images/example.jpg", warped)
 
     cap.release()
     cv2.destroyAllWindows()
