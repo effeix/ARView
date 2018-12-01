@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-
+import sys
 
 def origin_points(img):
     max_x = img.shape[1] - 1
@@ -36,7 +36,7 @@ def read_img(path):
 CAMERA = 0
 CAMERA_WAIT = 30
 ARUCO = read_img("../images/board_aruco.png")
-CAR = read_img("../images/car.jpg")
+CAR = read_img(sys.argv[1])
 
 MARKERS_DICT = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_6X6_250)
 POS_ORIGIN, IDS_ORIGIN, _ = cv2.aruco.detectMarkers(ARUCO, MARKERS_DICT)
