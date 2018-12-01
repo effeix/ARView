@@ -12,7 +12,7 @@ The result is shown below:
 
 ## Usage
 To execute, use:
-```python
+```sh
 $ python main.py <img_path>
 ```
 
