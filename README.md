@@ -19,5 +19,5 @@ $ python main.py <img_path>
 where `img_path` is the path to the image to be applied to the board.
 
 ## Future work
-- [] Project 3D objects
-- [] Project in surface
+- [ ] Project 3D objects
+- [ ] Project in surface
